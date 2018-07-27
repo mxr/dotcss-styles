@@ -2,13 +2,7 @@
 
 # Creates a github.com.css file from github-dark.css, github-wide.css, and gist-wide.css
 
-safe_sed() {
-  if sed --version > /dev/null 2>&1; then
-    sed -i"" "$@"
-  else
-    sed -i "" "$@"
-  fi
-}
+source safe_sed.sh
 
 file=github.com.css
 url=https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/github-dark.css
