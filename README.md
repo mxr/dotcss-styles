@@ -7,4 +7,5 @@ most of which I did not write.
 
 ## Usage
 
-Run `./compile.sh`
+Clone this into the directory that `dcssd` serves files from.
+Run `./compile.sh` to update some of the files.
