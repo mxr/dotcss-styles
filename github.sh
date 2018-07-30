@@ -7,7 +7,7 @@ source safe_sed.sh
 file=github.com.css
 url=https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/github-dark.css
 
-curl "$url" -o "$file"
+curl -s "$url" -o "$file"
 
 # This is kind of a hack, allow code blocks to scroll
 safe_sed "s=.*nowrap=/**=" "$file"
