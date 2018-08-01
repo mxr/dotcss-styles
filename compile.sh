@@ -6,8 +6,8 @@ source github.sh
 # GitHub is special
 ./github.sh
 
-ids=( "154599" "143026" )
-files=( "slack.com.css" "calendar.google.com.css" )
+ids=( "154599" "143026" "136189" )
+files=( "slack.com.css" "calendar.google.com.css" "inbox.google.com.css" )
 
 for ((i=0; i<${#ids[@]}; ++i))
 do
@@ -21,7 +21,8 @@ do
         --compressed \
         | jq -r '.css' > "$file"
 
-    # Remove the moz annotations
-    safe_sed "/moz-document/d" "$file"
+    # Remove everything up to and including the first brace (moz annotation)
+    vim --clean -u NONE +'execute "normal V/{/e+1\<CR>d"' +'x' "$file"
+    # Remove last brace
     safe_sed "$ d" "$file"
 done
