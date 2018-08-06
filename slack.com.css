@@ -1770,7 +1770,7 @@ a.c-tabs__tab--plastic.c-tabs__tab--active, a.c-tabs__tab--plastic:active, a.c-t
     box-shadow: none;
 }
 .c-message_list__day_divider__line {
-    border-top: 1px solid #3A3E43;    
+    border-top: 1px solid #3A3E43;
 }
 .c-reaction {
     background: transparent;
@@ -1847,7 +1847,7 @@ a.c-tabs__tab--plastic.c-tabs__tab--active, a.c-tabs__tab--plastic:active, a.c-t
 }
 .c-mrkdwn__member--link, .c-mrkdwn__subteam--link {
     background: #282a2e;
-    color: #afd3e8  !important; 
+    color: #afd3e8  !important;
 }
 .c-mrkdwn__member--link:hover, .c-mrkdwn__subteam--link:hover {
     background: #151517;
@@ -1876,7 +1876,7 @@ ts-thread .collapse_inline_thread_container:hover, ts-thread .view_all_replies_c
     color: #afd3e8;
     background: #282a2e;
 }
-.c-message_attachment__image{    
+.c-message_attachment__image{
     background-color: #EEe;
 }
 .c-file__title {
@@ -2113,7 +2113,7 @@ ts-message .mention {
 }
 #file_reply_container .reply_limited, #reply_container .reply_limited, .reply_input_container .reply_limited {
     background: #3d3b40;
-}    
+}
 ts-thread .reply_input_container .collapsed_input_placeholder, ts-thread .reply_input_container .join_channel_from_thread_container, ts-thread .reply_input_container .reply_limited {
     border: 1px solid #282a2e;
 }
