@@ -11,6 +11,8 @@ files=( "slack.com.css" "calendar.google.com.css" "inbox.google.com.css" )
 
 for ((i=0; i<${#ids[@]}; ++i))
 do
+    echo "Compiling $file"
+
     id="${ids[i]}"
     file="${files[i]}"
 
@@ -25,4 +27,10 @@ do
     vim --clean -u NONE +'execute "normal V/{/e+1\<CR>d"' +'x' "$file"
     # Remove last brace
     safe_sed "$ d" "$file"
+
+    # Normalize files
+    dos2unix "$file" > /dev/null 2>&1
+    safe_sed 's/[[:blank:]]*$//' "$file"
+
+    echo "Done"
 done
