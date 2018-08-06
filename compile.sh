@@ -1,7 +1,6 @@
 #!/bin/sh
 
 source safe_sed.sh
-source github.sh
 
 # GitHub is special
 echo "Compiling github.com.css"

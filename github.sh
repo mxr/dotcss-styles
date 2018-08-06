@@ -27,4 +27,5 @@ do
   echo "\n/* $style starts here */\n" >> "$file"
   cat "$style" >> "$file"
   echo "\n/* $style ends here */\n" >> "$file"
+  echo 'foo'
 done
