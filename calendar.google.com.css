@@ -1,5 +1,5 @@
 /* Dark Google Calendar (2018) 
-    v2.60.5.1 (2018-07-10)
+    v2.60.5.2 (2018-08-04)
     Author: Pawel Cislo (pyxelr) <pyxelr@gmail.com>
     Repository: https://github.com/pyxelr/Dark_Google_Calendar
     Userstyle: https://userstyles.org/styles/143026/dark-google-calendar-2018
@@ -212,16 +212,24 @@ html {
 }
 /* Google Calendar logo in the "Calendar of interest" view */
 
-.logo-plus-button-lockup {
+.gb_9b.gb_xe {
     filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%)!important;
 }
+
+/* "Calendar" text next to the top-left logo */
+
 .logo-plus-button-lockup-text {
     color: white;
 }
+
 /* Fix of Google Calendar logo in the month view*/
 
-.gb_Va.gb_ye {
+.gb_9b.gb_xe {
     filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(140%) contrast(105%)!important;
+}
+
+.gb_je.gb_ee {
+    color: #fff
 }
 /* "Moon phases" invertion */
 
