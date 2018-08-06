@@ -1,19 +1,19 @@
 #!/bin/sh
 
 source safe_sed.sh
-source github.sh
 
 # GitHub is special
 echo "Compiling github.com.css"
 ./github.sh
 echo "Done"
 
-ids=( "154599" "143026" "136189" "160459")
+ids=( "154599" "143026" "136189" "160459" "35345")
 files=(
     "slack.com.css"
     "calendar.google.com.css"
     "inbox.google.com.css"
     "news.ycombinator.com.css"
+    "stackoverflow.com.css"
 )
 
 for ((i=0; i<${#ids[@]}; ++i))
