@@ -82,7 +82,7 @@ body, .an, .ss, .bg, .lT, .lt, .dy, .d2, .fk, .do, .s2, .bc, .MH, .iQ, .pj, .Egm
 	}
 
 	.tX, .rO, .bx, .c1, .fX, .TlvAYc, .f5, .sb, .s8, .nW {
-		color: lightgray;
+		color: lightgray !important;
 	}
 
 	.aY, .b4, .MNn0h:hover, .Kza, .at {

@@ -41,3 +41,9 @@ do
 
     echo "Done"
 done
+
+
+echo "Post-processing inbox.google.com.css"
+# Fix sender name color
+vim --clean  +'execute "normal /fX\<CR>jwi !important"' +'x' inbox.google.com.css
+echo "Done"
