@@ -20,10 +20,11 @@ safe_sed "/moz-document/d" "$file"
 safe_sed "$ d" "$file"
 
 # Concatenate additional styles
-additional_styles=(github-wide.css gist-wide.css)
+additional_styles=( "github-wide.css" "gist-wide.css" )
 for style in ${additional_styles[@]}
 do
-  echo "\n/* $style starts here */\n" >> $file
+  wget -q -N "https://raw.githubusercontent.com/mdo/github-wide/master/$style"
+  echo "\n/* $style starts here */\n" >> "$file"
   cat "$style" >> "$file"
-  echo "\n/* $style ends here */\n" >> $file
+  echo "\n/* $style ends here */\n" >> "$file"
 done
