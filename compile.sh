@@ -2,18 +2,21 @@
 
 source safe_sed.sh
 
-# GitHub is special
+# Some of these are special
 echo "Compiling github.com.css"
 ./github.sh
 echo "Done"
 
-ids=( "154599" "143026" "136189" "160459" "35345")
+echo "Compiling stackoverflow.com.css"
+./stackoverflow.sh
+echo "Done"
+
+ids=( "154599" "143026" "136189" "160459" )
 files=(
     "slack.com.css"
     "calendar.google.com.css"
     "inbox.google.com.css"
     "news.ycombinator.com.css"
-    "stackoverflow.com.css"
 )
 
 for ((i=0; i<${#ids[@]}; ++i))
