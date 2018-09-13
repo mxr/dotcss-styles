@@ -11,11 +11,10 @@ echo "Compiling stackoverflow.com.css"
 ./stackoverflow.sh
 echo "Done"
 
-ids=( "154599" "143026" "136189" "160459" )
+ids=( "154599" "143026" "160459" )
 files=(
     "slack.com.css"
     "calendar.google.com.css"
-    "inbox.google.com.css"
     "news.ycombinator.com.css"
 )
 
